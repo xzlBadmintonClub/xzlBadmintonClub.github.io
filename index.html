@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>羽毛球特色网页</title>
+    <title>小竹林羽毛球俱乐部</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100%;
             font-family: Arial, sans-serif;
             background-image: url('bg.png'); /* 本地路径的羽毛球背景图片 */
             background-size: cover;
@@ -17,9 +19,9 @@
             text-align: center;
         }
         .container {
-            padding: 50px;
+            padding: 20px;
             background-color: rgba(0, 0, 0, 0.5); /* 半透明背景以突出文本 */
-            margin: 100px auto;
+            margin: 20px auto;
             width: 80%;
             border-radius: 10px;
         }
@@ -27,25 +29,79 @@
             font-size: 3em;
             margin-bottom: 20px;
         }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
         p {
             font-size: 1.5em;
             line-height: 1.6;
         }
-        a {
-            color: #FFD700; /* 金色链接 */
-            text-decoration: none;
-            font-weight: bold;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
         }
-        a:hover {
-            text-decoration: underline;
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .content {
+            margin-top: 50px;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景以突出文本 */
+            width: 80%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h2>小竹林羽毛球大赛</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>队伍</th>
+                    <th>场次1</th>
+                    <th>场次2</th>
+                    <th>场次3</th>
+                    <th>比分</th>
+                    <th>净胜球</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>队伍A</td>
+                    <td>胜</td>
+                    <td>负</td>
+                    <td>胜</td>
+                    <td>2-1</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td>队伍B</td>
+                    <td>负</td>
+                    <td>胜</td>
+                    <td>负</td>
+                    <td>1-2</td>
+                    <td>-1</td>
+                </tr>
+                <!-- 你可以添加更多的行 -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content">
         <h1>欢迎来到羽毛球世界</h1>
-        <p>这里是所有羽毛球爱好者的天堂。在这里，你可以找到最新的羽毛球赛事信息、技术指导和设备推荐。</p>
-        <p>想了解更多，请访问我们的 <a href="https://www.example.com">官方网站</a>。</p>
+        <p>这里是所有羽毛球爱好者的天堂。在这里，你可以尽情享受打羽毛球的乐趣。</p>
     </div>
 </body>
 </html>
