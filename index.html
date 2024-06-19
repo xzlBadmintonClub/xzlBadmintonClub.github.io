@@ -48,12 +48,25 @@
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
         }
         th {
             background-color: #333;
             color: white;
+        }
+        .team-col {
+            width: 30%;
+        }
+        .match-col, .score-col {
+            width: 15%;
+        }
+        .content {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景以突出文本 */
+            width: 80%;
+            margin: 50px auto; /* 确保左右居中 */
+            border-radius: 10px;
         }
         input[type="text"] {
             width: 100%;
@@ -70,55 +83,55 @@
         <table>
             <thead>
                 <tr>
-                    <th>队伍</th>
-                    <th>场次1</th>
-                    <th>场次2</th>
-                    <th>场次3</th>
-                    <th>净胜球</th>
+                    <th class="team-col">队伍</th>
+                    <th class="match-col">场次1</th>
+                    <th class="match-col">场次2</th>
+                    <th class="match-col">场次3</th>
+                    <th class="score-col">净胜球</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" value="龙彬/胡杰"></td>
-                    <td><input type="text" value="21:9"></td>
-                    <td><input type="text" value="21:16"></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value="17"></td>
+                    <td class="team-col"><input type="text" value="龙彬/胡杰"></td>
+                    <td class="match-col"><input type="text" value="21:9"></td>
+                    <td class="match-col"><input type="text" value="21:16"></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="score-col"><input type="text" value="17"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="龙彬/虎洋"></td>
-                    <td><input type="text" value="21:18"></td>
-                    <td><input type="text" value="21:10"></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value="14"></td>
+                    <td class="team-col"><input type="text" value="龙彬/虎洋"></td>
+                    <td class="match-col"><input type="text" value="21:18"></td>
+                    <td class="match-col"><input type="text" value="21:10"></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="score-col"><input type="text" value="14"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="龙彬/刘展"></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
+                    <td class="team-col"><input type="text" value="龙彬/刘展"></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="score-col"><input type="text" value=""></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="胡杰/刘赵"></td>
-                    <td><input type="text" value="21:18"></td>
-                    <td><input type="text" value="21:8"></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value="14"></td>
+                    <td class="team-col"><input type="text" value="胡杰/刘赵"></td>
+                    <td class="match-col"><input type="text" value="21:18"></td>
+                    <td class="match-col"><input type="text" value="21:8"></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="score-col"><input type="text" value="14"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="胡杰/虎洋"></td>
-                    <td><input type="text" value="11:21"></td>
-                    <td><input type="text" value="21:6"></td>
-                    <td><input type="text" value="20:22"></td>
-                    <td><input type="text" value="-3"></td>
+                    <td class="team-col"><input type="text" value="胡杰/虎洋"></td>
+                    <td class="match-col"><input type="text" value="11:21"></td>
+                    <td class="match-col"><input type="text" value="21:6"></td>
+                    <td class="match-col"><input type="text" value="20:22"></td>
+                    <td class="score-col"><input type="text" value="-3"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" value="虎洋/刘展"></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
-                    <td><input type="text" value=""></td>
+                    <td class="team-col"><input type="text" value="虎洋/刘展"></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="match-col"><input type="text" value=""></td>
+                    <td class="score-col"><input type="text" value=""></td>
                 </tr>
             </tbody>
         </table>
