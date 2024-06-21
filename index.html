@@ -17,6 +17,7 @@
             background-repeat: no-repeat;
             color: white;
             text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
         }
         .container {
             padding: 20px;
@@ -79,14 +80,14 @@
 </head>
 <body>
     <div class="container">
-	       <h2>小竹林羽毛球大赛--第二场</h2>
+	    <h2>小竹林羽毛球大赛--第二场</h2>
         <table>
             <thead>
                 <tr>
                     <th class="team-col">队伍</th>
-                    <th class="match-col">场1</th>
-                    <th class="match-col">场2</th>
-                    <th class="match-col">场3</th>
+                    <th class="match-col">场次1</th>
+                    <th class="match-col">场次2</th>
+                    <th class="match-col">场次3</th>
                     <th class="score-col">净胜球</th>
                 </tr>
             </thead>
@@ -205,14 +206,16 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+	<div class="container">
         <h2>小竹林羽毛球大赛--第一场</h2>
         <table>
             <thead>
                 <tr>
                     <th class="team-col">队伍</th>
-                    <th class="match-col">场1</th>
-                    <th class="match-col">场2</th>
-                    <th class="match-col">场3</th>
+                    <th class="match-col">场次1</th>
+                    <th class="match-col">场次2</th>
+                    <th class="match-col">场次3</th>
                     <th class="score-col">净胜球</th>
                 </tr>
             </thead>
@@ -272,7 +275,7 @@
             </thead>
             <tbody>
                 <tr>
-				    <td class="team-col"><input type="text" value="龙彬"></td>
+		    <td class="team-col"><input type="text" value="龙彬"></td>
                     <td class="match-col"><input type="text" value="6"></td>
                     <td class="match-col"><input type="text" value="46"></td>
                     <td class="match-col"><input type="text" value="??"></td>
@@ -297,8 +300,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-
+	</div>
     <div class="content">
         <h1>欢迎来到羽毛球世界</h1>
         <p>这里是所有羽毛球爱好者的天堂。在这里，你可以尽情享受打羽毛球的乐趣。</p>
